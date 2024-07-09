@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #F3F5FC;
+}
+
+
+header {
+    width: 100%;
+    height: 50px;
+    /* background-color: cadetblue; */
+}
+
+main {
+    width: 100%;
+    height: 90%;
+    /* 100% de la altura menos la altura del header */
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+section {
+    width: 40%;
+    height: 100%;
+    /* background-color: black; */
+
+}
+
+.section1 {
+    width: 60%;
+    /* background-color: blueviolet; */
+}
+
+.area {
+    background: #F3F5FC;
+    width: 80%;
+    height: 65%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    resize: none;
+    border: none;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.area,
+placeholder {
+    padding: 10px;
+}
+
+.area:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.\.advertencia {
+    display: flex;
+    justify-content: center;
+}
+
+.btnEncriptar,
+.btnDesencriptar {
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.btnEncriptar {
+    background: #1b5ba3;
+}
+
+.btnDesencriptar {
+    background: #D8DFE8;
+}
+
+.contenedorBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 15px;
+}
+
+
+.section2 {
+    width: 25rem;
+    margin-right: 35px;
+    flex-shrink: 0;
+    border-radius: 2rem;
+    background: #FFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.imgMuñeco {
+    width: 100%;
+    height: 60%;
+
+}
+
+.h3Contenedor {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+
+    color: #343A40;
+
+
+
+}
+
+.contenedorP {
+
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color: #495057;
+
+}
+
+.encriptado {
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.contenedorCopia {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnCopiar {
+    width: 35%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+footer {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    height: 20px;
+    border-radius: 15px;
+}
+
+.ocultar {
+    display: none;
+}
+
+/* Consultas de medios para tabletas y móviles */
+
+/* Para tabletas (hasta 768px de ancho) */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        /* Cambia la dirección de los elementos a columna */
+    }
+
+    .section {
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente */
+    }
+
+    .section1 {
+        width: 100%;
+        /* Ajusta el ancho al 100% */
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente */
+    }
+
+    .area {
+        width: 90%;
+        /* Ajusta el ancho al 90% del contenedor */
+        max-width: 600px;
+        /* Limita el ancho máximo para evitar que sea demasiado grande */
+        height: 200px;
+        /* Ajusta la altura */
+        margin: 10px auto;
+        /* Añade margen vertical y centra el área */
+    }
+
+    .btnEncriptar,
+    .btnDesencriptar,
+    .btnCopiar {
+        width: 90%;
+        /* Ajusta el ancho al 90% del contenedor */
+        max-width: 250px;
+        /* Limita el ancho máximo de los botones */
+        height: 40px;
+        /* Ajusta la altura de los botones */
+        margin: 10px auto;
+        /* Añade margen vertical y centra los botones */
+    }
+
+    .section2 {
+        width: 90%;
+        /* Ajusta el ancho al 90% del contenedor */
+        max-width: 500px;
+        /* Limita el ancho máximo de la sección */
+        margin: 20px auto;
+        /* Añade margen vertical y centra la sección */
+    }
+
+    .imgMuñeco {
+        max-height: 200px;
+        /* Ajusta la altura máxima de la imagen */
+        width: auto;
+        /* Mantiene la proporción de la imagen */
+    }
+
+    footer {
+        font-size: 14px;
+        /* Ajusta el tamaño de la fuente para el pie de página */
+    }
+}
+
+/* Para móviles (hasta 480px de ancho) */
+@media (max-width: 768px) {
+    .btnEncriptar,
+    .btnDesencriptar {
+        width: 100%;
+    }
+
+    .section2 {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    
+    .contenedorCopia{
+        display: flex;
+        justify-content: center;
+        margin-top: -15em;
+    }
+}
