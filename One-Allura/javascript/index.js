@@ -44,6 +44,7 @@ function displayNone() {
 }
 
 function encriptar(mensaje) {
+    /**Remplaza de forma global  */
     return mensaje.replace(/[aeiou]/g, match => mapeoEncriptar[match]);
 }
 

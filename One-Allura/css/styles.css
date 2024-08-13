@@ -20,8 +20,6 @@ header {
 main {
     width: 100%;
     height: 90%;
-    /* 100% de la altura menos la altura del header */
-    /* background-color: blue; */
     display: flex;
     justify-content: space-between;
 
@@ -30,13 +28,11 @@ main {
 section {
     width: 40%;
     height: 100%;
-    /* background-color: black; */
 
 }
 
 .section1 {
     width: 60%;
-    /* background-color: blueviolet; */
 }
 
 .area {
@@ -167,7 +163,6 @@ footer {
     display: none;
 }
 
-/* Consultas de medios para tabletas y móviles */
 
 /* Para tabletas (hasta 768px de ancho) */
 @media (max-width: 768px) {
@@ -205,22 +200,15 @@ footer {
     .btnDesencriptar,
     .btnCopiar {
         width: 90%;
-        /* Ajusta el ancho al 90% del contenedor */
         max-width: 250px;
-        /* Limita el ancho máximo de los botones */
         height: 40px;
-        /* Ajusta la altura de los botones */
         margin: 10px auto;
-        /* Añade margen vertical y centra los botones */
     }
 
     .section2 {
         width: 90%;
-        /* Ajusta el ancho al 90% del contenedor */
         max-width: 500px;
-        /* Limita el ancho máximo de la sección */
         margin: 20px auto;
-        /* Añade margen vertical y centra la sección */
     }
 
     .imgMuñeco {
